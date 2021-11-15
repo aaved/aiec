@@ -88,7 +88,7 @@ h2#current-energy {
 .btn {
     background: #00B1CB;
     border: 6px solid #5D330B;
-    border-radius: 10px;
+    border-radius: 20px;
     height: 70px;
     width: 70px;
     color: white;
@@ -115,7 +115,7 @@ button#end-turn {
     font-size: 2rem;
     text-align: center;
     line-height: 1;
-    background: #FFAC00;
+    background: #fcb000;
     text-shadow: 2px 4px 0px #8e6f6f;
     margin-top: 0.5rem;
     cursor: pointer;
@@ -196,8 +196,8 @@ button#undo-btn.inactive {
     width: 40px;
     height: 40px;
     margin-bottom: 0.5rem;
-    border: 4px solid #5d330b;
-    border-radius: 0px 10px 10px 0px;
+    border: 4px solid #5d320b;
+    border-radius: 0px 15px 15px 0px;
     font-family: "Fredoka One";
 }
 
@@ -213,7 +213,7 @@ button#undo-btn.inactive {
 }
 
 .floating-item label {
-    background: #5d330b99;
+    background: #5d320b;
     display: block;
     width: 100%;
     height: 40px;

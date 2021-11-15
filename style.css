@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+    touch-action: manipulation;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+video {
+    filter: brightness(50%) contrast(75%);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    height: fit-content;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Fredoka One', cursive;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.bg-overlay {
+    background: #c07f5aad;
+}
+
+.div-wrapper {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+h3#round-text {
+    font-size: 16px;
+}
+
+h2#current-energy {
+    font-size: 5rem;
+}
+
+.btn {
+    background: #00B1CB;
+    border: 6px solid #5D330B;
+    border-radius: 10px;
+    height: 70px;
+    width: 70px;
+    color: white;
+    font-family: 'Fredoka One';
+    font-size: 54px;
+    line-height: 70px;
+    cursor: pointer;
+}
+
+.btn span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    height: 34px;
+    margin-top: -68px;
+}
+
+.minus-btn {
+    background: #DB4647;
+}
+
+button#end-turn {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1;
+    background: #FFAC00;
+    text-shadow: 2px 4px 0px #8e6f6f;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+button.end-turn-btn {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1;
+    background: #F0C66E;
+    text-shadow: 2px 4px 0px #8e6f6f;
+    margin-top: 0.5rem;
+}
+
+button#end-turn:active {
+    background: #d8b770;
+}
+
+button#reset-btn {
+    background-color: #DB4647;
+    cursor: pointer;
+}
+
+button#reset-btn:active {
+    background: #DB4647;
+}
+
+.btn.add-btn:active {
+    background: #008da2;
+}
+
+.btn.minus-btn:active {
+    background: #923838;
+}
+
+button#undo-btn {
+    background: #d2761e;
+}
+
+button#undo-btn:active {
+    background: #af6219;
+}
+
+button#undo-btn.inactive {
+    background-color: #bba188;
+    color: #ffffff;
+    border-color: #71604f;
+    cursor: initial;
+}
+
+.reset-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    grid-gap: 0.5rem;
+}
+
+.options-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.option-text {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    width: 30px;
+}
+
+/** FLOATING LEFT WIDGET **/
+
+.floating-btn {
+    background: red;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+    border: 4px solid #5d330b;
+    border-radius: 0px 10px 10px 0px;
+    font-family: "Fredoka One";
+}
+
+.left-floating-widget {
+    position: absolute;
+    top: 40px;
+    left: -5px;
+}
+
+.floating-item {
+    display: flex;
+    align-items: center;
+}
+
+.floating-item label {
+    background: #5d330b99;
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.floating-item label {
+    display: block;
+    margin-left: 0.5rem;
+    margin-top: -11px;
+}
+
+button#win-btn {
+    background-color: #00b1cb;
+}
+
+button#lose-btn {
+    background-color: #db4647;
+}
+
+button#draw-btn {
+    background-color: #B5BBC3;
+}
+
+button#clear-btn {
+    background-color: #EFAA29;
+}
+
+button#win-btn:active {
+    background-color: #0298af;
+}
+
+button#lose-btn:active {
+    background-color: #ac3030;
+}
+
+button#draw-btn:active {
+    background-color: #90959c;
+}
+
+button#clear-btn:active {
+    background-color: #c98d1e;
+}
+
+.reset-undo-wrapper .floating-btn {
+    width: 64px;
+    height: 49px;
+}
+
+.reset-undo-wrapper {
+    margin-top: 20px;
+}

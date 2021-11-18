@@ -203,7 +203,7 @@ button#undo-btn.inactive {
 
 .left-floating-widget {
     position: absolute;
-    top: 40px;
+    top: 20px;
     left: -5px;
 }
 
@@ -219,7 +219,7 @@ button#undo-btn.inactive {
     height: 40px;
     line-height: 40px;
     width: 40px;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .floating-item label {

@@ -11,70 +11,6 @@ let loseScore = 0;
 let drawScore = 0;
 let isUndoActive = false;
 
-let previousCard = 6;
-let currentCard = 6;
-let card = 0;
-
-function simpleAdd() {
-    energyUsed = energyUsed + 1;
-    runningEnergy = runningEnergy - 1;
-
-    if (runningEnergy <= 0) { runningEnergy = 0; }
-
-    $('#current-energy').text(runningEnergy);
-
-    if (energyUsed > currentEnergy) { energyUsed = currentEnergy; }
-    $('#energy-used-text').text(energyUsed);
-}
-
-function simpleMinus() {
-    energyUsed = energyUsed - 1;
-    runningEnergy = runningEnergy + 1;
-
-    $('#current-energy').text(runningEnergy);
-    $('#energy-used-text').text(energyUsed);
-}
-
-function simpleEndTurn() {
-    round = round + 1;
-    previousEnergy = currentEnergy;
-    previousCard = currentCard;
-
-    currentEnergy = runningEnergy + 2;
-
-    if (currentEnergy >= 10) { currentEnergy = 10; }
-
-    if (currentEnergy < 2) { currentEnergy = 2; }
-
-    runningEnergy = currentEnergy;
-
-    if (round >= 10) { $('.bg-overlay').css('background', '#b52930ad'); } else { $('.bg-overlay').css('background', '#c07f5aad'); }
-
-    $('#current-energy').text(currentEnergy);
-    $('#round-text span').text(round);
-    energyUsed = 0;
-    energyGained = 0;
-    energyDestroyed = 0;
-    $('#energy-used-text').text(energyDestroyed);
-    $('#energy-gained-text').text(energyDestroyed);
-    $('#energy-destroyed-text').text(energyDestroyed);
-    $('#undo-btn').attr('disabled', false);
-    isUndoActive = true;
-    $('#undo-btn').removeClass('inactive');
-}
-
-$('#simple-add').click(function () {
-    simpleAdd();
-});
-
-$('#simple-minus').click(function () {
-    simpleMinus();
-});
-
-$('#simple-end-turn').click(function () {
-    simpleEndTurn();
-});
-
 function addEnergyUsed() {
     energyUsed = energyUsed + 1;
     runningEnergy = runningEnergy - 1;
@@ -152,12 +88,10 @@ function undo() {
     if (isUndoActive == true) {
         currentEnergy = previousEnergy;
         runningEnergy = currentEnergy;
-        currentCard = previousCard;
 
         round = round - 1;
 
         $('#current-energy').text(currentEnergy);
-        $('#current-card').text(currentCard);
         $('#round-text span').text(round);
         energyUsed = 0;
         energyGained = 0;
@@ -175,7 +109,6 @@ function undo() {
 function endTurn() {
     round = round + 1;
     previousEnergy = currentEnergy;
-    previousCard = currentCard;
 
     currentEnergy = runningEnergy + 2;
 
@@ -208,11 +141,6 @@ function reset() {
     energyDestroyed = 0;
     round = 1;
     isUndoActive = false;
-
-    currentCard = 6;
-    card = 0;
-    $('#current-card').text(currentCard);
-    $('#card-txt').text(card);
 
     $('#current-energy').text(currentEnergy);
     $('#round-text span').text(round);

@@ -13,54 +13,56 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="div-wrapper">
-            <div class="left-floating-widget">
-                <div class="win-draw-lose-wrapper">
-                    <div id="win-wrap" class="floating-item">
-                        <button id="win-btn" class="floating-btn" title="Win">W</button>
-                        <label id="win-txt">0</label>
-                    </div>
-                    <div id="lose-wrap" class="floating-item">
-                        <button id="lose-btn" class="floating-btn" title="Lose">L</button>
-                        <label id="lose-txt">0</label>
-                    </div>
-                    <div id="draw-wrap" class="floating-item">
-                        <button id="draw-btn" class="floating-btn" title="Draw">D</button>
-                        <label id="draw-txt">0</label>
-                    </div>
-                    <div id="clear-wrap" class="floating-item">
-                        <button id="clear-btn" class="floating-btn" title="Reload"><i
-                                class="fas fa-sync-alt"></i></button>
+    <div class="background-overlay">
+        <div class="container">
+            <div class="div-wrapper">
+                <div class="left-floating-widget">
+                    <div class="win-draw-lose-wrapper">
+                        <div id="win-wrap" class="floating-item">
+                            <button id="win-btn" class="floating-btn" title="Win">W</button>
+                            <label id="win-txt">0</label>
+                        </div>
+                        <div id="lose-wrap" class="floating-item">
+                            <button id="lose-btn" class="floating-btn" title="Lose">L</button>
+                            <label id="lose-txt">0</label>
+                        </div>
+                        <div id="draw-wrap" class="floating-item">
+                            <button id="draw-btn" class="floating-btn" title="Draw">D</button>
+                            <label id="draw-txt">0</label>
+                        </div>
+                        <div id="clear-wrap" class="floating-item">
+                            <button id="clear-btn" class="floating-btn" title="Reload"><i
+                                    class="fas fa-sync-alt"></i></button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <h3 id="round-text">Round <span>1</span></h3>
-            <h2 id="current-energy">3</h2>
-            <label>Energy Used</label>
-            <div class="options-wrapper">
-                <button id="energy-used-minus" class="minus-btn btn"><span>-</span></button>
-                <h3 id="energy-used-text" class="option-text">0</h3>
-                <button id="energy-used-add" class="add-btn btn"><span>+</span></button>
-            </div>
-            <label>Energy Gained</label>
-            <div class="options-wrapper">
-                <button id="energy-gained-minus" class="minus-btn btn"><span>-</span></button>
-                <h3 id="energy-gained-text" class="option-text">0</h3>
-                <button id="energy-gained-add" class="add-btn btn"><span>+</span></button>
-            </div>
-            <label>Energy Destroyed</label>
-            <div class="options-wrapper">
-                <button id="energy-destroyed-minus" class="minus-btn btn"><span>-</span></button>
-                <h3 id="energy-destroyed-text" class="option-text">0</h3>
-                <button id="energy-destroyed-add" class="add-btn btn"><span>+</span></button>
-            </div>
-            <div class="end-turn-wrapper">
-                <button id="end-turn" class="btn end-turn-btn">End Turn</button>
-            </div>
-            <div class="reset-wrapper">
-                <button id="reset-btn" class="btn end-turn-btn">Reset</button>
-                <button id="undo-btn" class="btn end-turn-btn inactive"><i class="fas fa-redo"></i></button>
+                <h3 id="round-text">Round <span>1</span></h3>
+                <h2 id="current-energy">3</h2>
+                <label>Energy Used</label>
+                <div class="options-wrapper">
+                    <button id="energy-used-minus" class="minus-btn btn"><span>-</span></button>
+                    <h3 id="energy-used-text" class="option-text">0</h3>
+                    <button id="energy-used-add" class="add-btn btn"><span>+</span></button>
+                </div>
+                <label>Energy Gained</label>
+                <div class="options-wrapper">
+                    <button id="energy-gained-minus" class="minus-btn btn"><span>-</span></button>
+                    <h3 id="energy-gained-text" class="option-text">0</h3>
+                    <button id="energy-gained-add" class="add-btn btn"><span>+</span></button>
+                </div>
+                <label>Energy Destroyed</label>
+                <div class="options-wrapper">
+                    <button id="energy-destroyed-minus" class="minus-btn btn"><span>-</span></button>
+                    <h3 id="energy-destroyed-text" class="option-text">0</h3>
+                    <button id="energy-destroyed-add" class="add-btn btn"><span>+</span></button>
+                </div>
+                <div class="end-turn-wrapper">
+                    <button id="end-turn" class="btn end-turn-btn">End Turn</button>
+                </div>
+                <div class="reset-wrapper">
+                    <button id="reset-btn" class="btn end-turn-btn">Reset</button>
+                    <button id="undo-btn" class="btn end-turn-btn inactive"><i class="fas fa-redo"></i></button>
+                </div>
             </div>
         </div>
     </div>

@@ -25,6 +25,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin-right: auto;
 }
 
+
+.background-overlay {
+    width: 100vw;
+    min-height: 100vh;
+    background: #00000000;
+}
+
 body::before {
     content: "";
     z-index: -1;
@@ -84,7 +91,7 @@ h2#current-energy {
 }
 
 .minus-btn {
-    background: #DB4647;
+    background: #db4647;
 }
 
 button#end-turn {
@@ -109,7 +116,7 @@ button.end-turn-btn {
 }
 
 button#end-turn:active {
-    background: #d8b770;
+    background: #c58a00;
 }
 
 button#reset-btn {
@@ -118,15 +125,15 @@ button#reset-btn {
 }
 
 button#reset-btn:active {
-    background: #DB4647;
+    background: #b3393a;
 }
 
 .btn.add-btn:active {
-    background: #008da2;
+    background: #008b9f;
 }
 
 .btn.minus-btn:active {
-    background: #923838;
+    background: #b3393a;
 }
 
 button#undo-btn {
@@ -216,15 +223,15 @@ button#draw-btn {
 }
 
 button#clear-btn {
-    background-color: #EFAA29;
+    background-color: #fcb000;
 }
 
 button#win-btn:active {
-    background-color: #0298af;
+    background-color: #008b9f;
 }
 
 button#lose-btn:active {
-    background-color: #ac3030;
+    background-color: #b3393a;
 }
 
 button#draw-btn:active {
@@ -232,5 +239,5 @@ button#draw-btn:active {
 }
 
 button#clear-btn:active {
-    background-color: #c98d1e;
+    background-color: #c58a00;
 }

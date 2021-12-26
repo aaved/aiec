@@ -118,7 +118,7 @@ function endTurn() {
 
     runningEnergy = currentEnergy;
 
-    if (round >= 10) { $('.bg-overlay').css('background', '#b52930ad'); } else { $('.bg-overlay').css('background', '#c07f5aad'); }
+    if (round >= 10) { $('.background-overlay').css('background', 'rgb(247, 82, 82, 0.25)'); } else { $('.background-overlay').css('background', '#00000000'); }
 
     $('#current-energy').text(currentEnergy);
     $('#round-text span').text(round);
@@ -147,7 +147,7 @@ function reset() {
     $('#energy-used-text').text(energyDestroyed);
     $('#energy-gained-text').text(energyDestroyed);
     $('#energy-destroyed-text').text(energyDestroyed);
-    $('.bg-overlay').css('background', '#c07f5aad');
+    $('.background-overlay').css('background', '#00000000');
 }
 
 $('#end-turn').click(function () {
